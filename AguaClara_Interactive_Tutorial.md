@@ -18,7 +18,7 @@ You can find a GitHub tutorial [here](https://github.com/AguaClara/aguaclara_tut
 
 1. Below this, write a sentence or two about yourself:
 
-<!--- Fill you answer here. --->
+My name is Sidney and I am a junior in Environmental Engineering. I like chocolate ice cream.
 
 
 
@@ -44,7 +44,7 @@ To signify a header, use `#`. The more `#` you use, the smaller the header gets.
 
 1. Make a header of similar size as Header 3 with whatever text you want:
 
-<!--- Fill you answer here. --->
+###Header size 3
 
 ## Emphasis
 There are several different ways to emphasize text: *italics*, **bold**, ***combined***, and ~~strikethrough~~.
@@ -56,7 +56,10 @@ There are several different ways to emphasize text: *italics*, **bold**, ***comb
 
 1. Write 4 of your favorite words using each type of emphasis:
 
-<!--- Fill you answer here. --->
+*Silence*
+**Sugar**
+***Spicy***
+~~Stroke~~
 
 
 ## Lists
@@ -68,7 +71,11 @@ Lists are very easy to do. For a bulleted list, use the asterisk and for a numbe
 
 1. Now try it out for yourself. Write down a list of things you hope to achieve this semester, and elaborate on them with sub items:
 
-<!--- Fill you answer here. --->
+* Find an internship
+  - SF or NYC
+* Be healthier
+  - Cook more
+  - Exercise every day
 
 ## Images
 To input images, you'll either need an image URL or a file path to your image. For AguaClara work, your repository should have a folder for images where you can get an image URL or file path from. In this tutorial, I've made an image folder with a picture in the `aguaclara_tutorial` repository.
@@ -100,8 +107,11 @@ Image with Height and Width Adjusted:
 
 1. Make an images folder in your personal repository, and import an image of your hometown or pet from that folder. Do it unformatted using the image URL and the relative file path method, then do it again but instead change the height and width of your image:
 
-<!--- Fill you answer here. --->
+![Honduras pic](https://confluence.cornell.edu/download/attachments/10422243/16251764_1418436764842566_3722466918124830288_o.jpg?version=1&modificationDate=1485464938000&api=v2)
 
+![Honduras pic](/Images/honduras_pic.jpg)
+
+<img src="https://confluence.cornell.edu/download/attachments/10422243/16251764_1418436764842566_3722466918124830288_o.jpg?version=1&modificationDate=1485464938000&api=v2" height=40 width= 50>
 
 
 
@@ -113,7 +123,7 @@ To insert a link, all you have to do is enclose your linked text in `[]` followe
 
 1. Below, write a sentence describing your major, and insert a link to your major's department website.
 
-<!--- Fill you answer here. --->
+[BEE Website](https://bee.cals.cornell.edu/)
 
 ## Tables
 Tables in Markdown are slightly harder, but there's an automatic function that allows to you make one easily. When working in a `.md` file, all you have to do is type `table` and hit enter. It will initialize a 2 by 2 table, but you can easily increase the width by going to the last column and hitting `Tab` or it's height by clicking in any cell and hitting `Enter`. Notice in the example how the text below the header is justified left, center, and right. This is due to the line below the header. A line with a colon on the far left of the dashes only indicates left justified, colons on both sides of the dashes indicates centered, and a colon on the far right of the dashes indicates right justified.
@@ -143,7 +153,11 @@ When making tables, it's not important that the lines match up. For example, the
 
 1. Create a table listing your 3 favorite animals, foods, books, and places on campus. Try out the different cell justifications:
 
-<!--- Fill you answer here. --->
+| Animals |   Foods   |        Books        |    Places    |
+|:-------:|:---------:|:-------------------:|:------------:|
+| Iguanas |   Sushi   | The Case for Christ | Kuala Lumpur |
+| Snakes  | Ice Cream |    Coming Clean     |    Hanoi     |
+| Guinea Pigs | Brie | 1984 | Venice  |
 
 
 
@@ -162,12 +176,13 @@ For larger code blocks where you report multiple lines of code, you always start
 
 1. Below, write a Python print function with a different string using syntax highlighting:
 
-<!--- Fill you answer here. --->
+`print('Hello World!')`
 
 2. Now write a block of Python code for that same print statement:
 
-<!--- Fill you answer here. --->
-
+```python
+print('Hello World!')
+```
 
 
 ## LaTeX Equations
@@ -177,7 +192,7 @@ $$ Re_D = \frac{uD}{\nu} $$
 
 1. Try it on your own! Write your favorite equation using LaTeX source code and toggle the LaTeX preview to see it formatted:
 
-<!--- Fill you answer here. --->
+$$ x^n + y^n = z^n $$
 
 
 # Using Python and Running it With Hydrogen in Markdown
@@ -213,39 +228,48 @@ These questions are meant to test what you've learned from the Python Basics tut
 
 1. Write a conditional statement with 3 conditions: when x is 10, when x is 1, and when x is anything other than 1 or 10. For each condition, have your code print what the value is or isn't.
 
-<!--- Fill you answer here. --->
-
-
-
+```python
+x = 1
+if x == 10:
+  print('x is 10')
+elif x == 1:
+  print('x is 1')
+else:
+  print('x is neither 1 nor 10')
+```
 
 2. Write a `for` loop that takes a variable with an initial value of 0, and adds the current index to the previous value of that variable (i.e. you variable should grow in size every iteration). Perform the iteration 20 times, and have the final value be printed at the end.
 
-<!--- Fill you answer here. --->
-
-
-
-
-
-
-
+```python
+x = 0
+for i in range(20):
+  x = x + i
+print('x is: ', x)
+```
 
 
 3. Using the NumPy package, calculate the value of sin(4), and use the sigfig function from the utility module in aide_design to get your answer to 3 sig-figs. *(Hint: You will need to import these packages. Remember how to do that?)*
 
-<!--- Fill you answer here. --->
+```python
+from aide_design.play import*
+value = np.sin(4)
+value = ut.sig(value, 3)
+```
 
 
 
 4. Create a `list` of length 5, and verify the length of your list. Once you've done that, turn your `list` into an `array` and apply units of meters to it. After that, create a 5x5 `array`, extract the middle row and middle column. Verify the size of your 2D `array` and apply units of liters to it.
 
-<!--- Fill you answer here. --->
-
-
-
-
-
-
-
+```python
+from aide_design import*
+thisList = [0,1,2,3,4]
+thisArray = np.array(thisList) * u.m
+newArray = np.array([[0,1,2,3,4],[2,3,4,5,6],[4,5,6,7,8],[6,7,8,9,10],[7,8,9,10,11]])
+newArray[:,2]
+np.size(newArray)
+np.shape(newArray)
+newArray = newArray * u.L
+```
 
 
 5.  One of the most famous equations for a particle diffusing through a liquid at low Reynolds Number is the Stokes-Einstein Equation where k<sub>B</sub> is the Boltzmann constant, T is the temperature in Kelvin, eta is the dynamic viscosity in kg/(m*s), and r is the particle radius. Write a function that takes a temperature in Kelvin, a particle radius in meters, and a viscosity of water to calculate the diffusion coefficient D.
@@ -257,17 +281,40 @@ These questions are meant to test what you've learned from the Python Basics tut
 $$ D = \frac{k_BT}{6\pi\eta r} $$
 
 ```python
+import math as m
 from scipy.constants import Boltzmann as kB_sc # I've imported the unitless value for kB from SciPy
 
 kB = kB_sc * u.joule / u.kelvin # I've given kB units for you in J/K; you can use the kB variable to give you Boltzmann's constant with units
 
 # Write your code here
+def findD(T,r,v):
+  """ This function takes the values of temperature T in Kelvin, particle radius r, and a viscosity of water v to calculate the diffusion coefficient D."""
+  T = T * u.kelvin
+  r = r * u.m
+  v = (v * u.kg) / (u.m * u.s)
+  D = ((kB * T) / (6 * m.pi * v * r)).to_base_units()
+  return D
 
+findD(100, 5, 30)
 ```
 
 6. You have a pipe with a radius of 0.2 m with water flowing in it at 2 m<sup>3</sup>/s. You want to see how the Reynolds Number changes as viscosity changes due to a change in temperature from 0 to 200<sup>o</sup>C. Create a plot of Reynolds Number against Temperature in Kelvin to show a relationship. Make sure your plot has a title, labeled axes, and axes grid. You can use functions from `physchem` like `pc.re_pipe` and `pc.viscosity_kinematic`. *(Hint: Make an array of temperatures to input into the `pc.viscosity_kinematic` function)*. Make sure to save you plot to your images folder in your personal repository.
 
-<!--- Fill you answer here. --->
+```python
+from aide_design.play import*
+tempArray = u.Quantity(np.arange(0,200,1),u.celsius)
+visArray = pc.viscosity_kinematic(tempArray)
+pipeArray = pc.re_pipe(2, 0.2, visArray)
+plt.plot(visArray, pipeArray, label = 'Reynolds Number')
+plt.xlabel('Viscosity')
+plt.ylabel('Reynolds Number')
+plt.title('Viscosity vs Reynolds Number')
+plt.minorticks_on()
+plt.grid(which = 'major')
+plt.grid(which = 'minor')
+plt.savefig('./Images/Reynolds_number.png')
+plt.show()
+```
 
 # Teletype Basics
 In this section you and your team can practice using Teletype together.
