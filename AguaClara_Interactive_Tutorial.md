@@ -312,7 +312,7 @@ plt.title('Viscosity vs Reynolds Number')
 plt.minorticks_on()
 plt.grid(which = 'major')
 plt.grid(which = 'minor')
-plt.savefig('./Images/Reynolds_number.png')
+plt.savefig('/Users/sidneylok/github/aguaclara_tutorial/Images/Reynolds_number.png')
 plt.show()
 ```
 
