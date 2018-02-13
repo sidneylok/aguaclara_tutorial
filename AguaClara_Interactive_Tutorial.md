@@ -321,7 +321,7 @@ In this section you and your team can practice using Teletype together.
 
 1. Create a portal for your team members to join. Have them write you words of  encouragement in the space below, and be sure they sign their name next to their encouragements.
 
-<!--- Fill you answer here. --->
+Yayay it worked! I love you so much and I'm glad you're back at Cornell!! -sung min kim
 
 
 
