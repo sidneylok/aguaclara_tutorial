@@ -323,6 +323,7 @@ In this section you and your team can practice using Teletype together.
 
 Yayay it worked! I love you so much and I'm glad you're back at Cornell!! -sung min kim
 
+Hello! U r da gr8est n u should never 4get that. -Erica Marroquin
 
 
 
